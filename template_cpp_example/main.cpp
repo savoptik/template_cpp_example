@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "templates/templates.hpp"
+#include "MyTemplats.hpp"
 
 int main(int argc, const char * argv[]) {
     const int iSize = 10;
@@ -18,5 +18,14 @@ int main(int argc, const char * argv[]) {
     double doubleArray[dSise] = {1.5, 2.6, 3.7, 4.8};
     std::cout << "Массив даблов:\n";
     printArray(doubleArray, dSise);
+    stack<int> st(5);
+    st.push(0);
+    st.push(1);
+    st.push(2);
+    st.push(3);
+    st.push(4);
+    st.push(5);
+    st.pop();
+    st.printStack();
     return 0;
 }

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE3DA690230046A1008F3C90 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3DA68F230046A1008F3C90 /* libc++.tbd */; };
+		FE3DA69323004A5D008F3C90 /* MyTemplats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE3DA69123004A5D008F3C90 /* MyTemplats.cpp */; };
 		FEC8AD4C23002051008E97B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEC8AD4B23002051008E97B8 /* main.cpp */; };
-		FEC8AD5623002176008E97B8 /* templates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEC8AD5423002176008E97B8 /* templates.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FE3DA68F230046A1008F3C90 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FE3DA69123004A5D008F3C90 /* MyTemplats.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyTemplats.cpp; sourceTree = "<group>"; };
+		FE3DA69223004A5D008F3C90 /* MyTemplats.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyTemplats.hpp; sourceTree = "<group>"; };
 		FEC8AD4823002051008E97B8 /* template_cpp_example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = template_cpp_example; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC8AD4B23002051008E97B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FEC8AD522300208F008E97B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FEC8AD5423002176008E97B8 /* templates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = templates.cpp; sourceTree = "<group>"; };
-		FEC8AD5523002176008E97B8 /* templates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = templates.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,18 +38,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3DA690230046A1008F3C90 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE3DA68E230046A1008F3C90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE3DA68F230046A1008F3C90 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEC8AD3F23002051008E97B8 = {
 			isa = PBXGroup;
 			children = (
 				FEC8AD522300208F008E97B8 /* README.md */,
 				FEC8AD4A23002051008E97B8 /* template_cpp_example */,
 				FEC8AD4923002051008E97B8 /* Products */,
+				FE3DA68E230046A1008F3C90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,27 +75,30 @@
 			isa = PBXGroup;
 			children = (
 				FEC8AD4B23002051008E97B8 /* main.cpp */,
-				FEC8AD5323002115008E97B8 /* templates */,
+				FE3DA69123004A5D008F3C90 /* MyTemplats.cpp */,
+				FE3DA69223004A5D008F3C90 /* MyTemplats.hpp */,
 			);
 			path = template_cpp_example;
 			sourceTree = "<group>";
 		};
-		FEC8AD5323002115008E97B8 /* templates */ = {
-			isa = PBXGroup;
-			children = (
-				FEC8AD5423002176008E97B8 /* templates.cpp */,
-				FEC8AD5523002176008E97B8 /* templates.hpp */,
-			);
-			path = templates;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FE3DA69423004AFC008F3C90 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FEC8AD4723002051008E97B8 /* template_cpp_example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEC8AD4F23002051008E97B8 /* Build configuration list for PBXNativeTarget "template_cpp_example" */;
 			buildPhases = (
+				FE3DA69423004AFC008F3C90 /* Headers */,
 				FEC8AD4423002051008E97B8 /* Sources */,
 				FEC8AD4523002051008E97B8 /* Frameworks */,
 				FEC8AD4623002051008E97B8 /* CopyFiles */,
@@ -135,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEC8AD4C23002051008E97B8 /* main.cpp in Sources */,
-				FEC8AD5623002176008E97B8 /* templates.cpp in Sources */,
+				FE3DA69323004A5D008F3C90 /* MyTemplats.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +211,9 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -247,7 +264,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -258,6 +277,8 @@
 				DEVELOPMENT_TEAM = 3KRK236DU7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -268,6 +289,8 @@
 				DEVELOPMENT_TEAM = 3KRK236DU7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
