@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FEC8AD4C23002051008E97B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEC8AD4B23002051008E97B8 /* main.cpp */; };
+		FEC8AD5623002176008E97B8 /* templates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEC8AD5423002176008E97B8 /* templates.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		FEC8AD4823002051008E97B8 /* template_cpp_example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = template_cpp_example; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC8AD4B23002051008E97B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FEC8AD522300208F008E97B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FEC8AD5423002176008E97B8 /* templates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = templates.cpp; sourceTree = "<group>"; };
+		FEC8AD5523002176008E97B8 /* templates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = templates.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 		FEC8AD3F23002051008E97B8 = {
 			isa = PBXGroup;
 			children = (
+				FEC8AD522300208F008E97B8 /* README.md */,
 				FEC8AD4A23002051008E97B8 /* template_cpp_example */,
 				FEC8AD4923002051008E97B8 /* Products */,
 			);
@@ -58,8 +63,18 @@
 			isa = PBXGroup;
 			children = (
 				FEC8AD4B23002051008E97B8 /* main.cpp */,
+				FEC8AD5323002115008E97B8 /* templates */,
 			);
 			path = template_cpp_example;
+			sourceTree = "<group>";
+		};
+		FEC8AD5323002115008E97B8 /* templates */ = {
+			isa = PBXGroup;
+			children = (
+				FEC8AD5423002176008E97B8 /* templates.cpp */,
+				FEC8AD5523002176008E97B8 /* templates.hpp */,
+			);
+			path = templates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEC8AD4C23002051008E97B8 /* main.cpp in Sources */,
+				FEC8AD5623002176008E97B8 /* templates.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
